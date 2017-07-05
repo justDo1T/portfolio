@@ -1,0 +1,151 @@
+@media screen and (max-width: 1500px) {
+
+	#header-wrapper {
+		background-position: center top;
+	}	
+}
+
+@media screen and (max-width: 1100px) {
+
+	#logo {
+		margin: 17px 30px;
+	}
+
+	#heading-text h1 {
+		font-size: 8rem;
+	}
+
+	.btn {
+		padding-top: 4%;
+	}
+
+	.button {
+		font-size: 1.8rem;
+		padding: 9px 18px;
+	}
+
+	nav ul li {
+		padding: 25px 20px;
+	}
+
+	nav ul li a {
+		font-size: 1.8rem;
+		padding: 10px 15px;
+	}
+}
+
+@media screen and (max-width: 950px) {
+
+	#logo {
+		margin: 16px 25px;
+		width: 110px;
+		height: 35px;
+	}
+
+	#heading-text h1 {
+		font-size: 7.5rem;
+	}
+
+	nav ul li {
+		padding: 22px 15px;
+	}
+
+	nav ul li a {
+		font-size: 1.7rem;
+		padding: 10px 15px;
+	}
+}
+
+/*--- Hamburger Starts --*/
+@media screen and (max-width: 850px) {
+
+	#menu-icon {
+		display: inline-block;
+	}
+
+	#top-bar-wrapper {
+		z-index: 1;
+	}
+
+	nav ul {
+		display: none;
+		position: absolute;
+		right: 1.5%;
+		background-color: #CBDFD6;
+		width: 30%;
+		border: 1.5px solid #3A6168;
+		border-radius: 7px;
+	}
+
+	#main-nav.showHide {
+		display: block;
+		transition: all 0.4s linear;
+	}
+
+	nav ul li {
+		width: 100%;
+		text-align: center;
+		padding: 22px 0;
+	}
+
+	nav ul li a {
+		padding: 15px 30px;
+		color: #3A6168;
+		border: 1px solid transparent;
+	}
+
+	nav ul li a:hover {
+		color: #000;
+		border: 1px solid #337579;
+	}
+
+	#top-bar-wrapper.scrolled nav a {
+		border: 1px solid transparent;
+	}
+
+	#top-bar-wrapper.scrolled nav a:hover {
+		border: 1px solid #337579;
+	}
+}
+
+@media screen and (max-width: 600px) {
+
+	nav ul {
+		width: 50%;
+	}
+
+	#heading-text h1 {
+		font-size: 6.7rem;
+	}
+
+}
+
+@media screen and (max-width: 500px) {
+
+	#heading-text h1 {
+		font-size: 5.5rem;
+	}
+}
+
+@media screen and (max-width: 450px) {
+
+	#heading-text h1 {
+		font-size: 4.7rem;
+	}
+}
+
+@media screen and (max-width: 375px) {
+
+	#heading-text h1 {
+		font-size: 4rem;
+	}
+
+	nav ul {
+		box-sizing: border-box;
+		right: 0%;
+		width: 100%;
+		border: none;
+		border-bottom: 1.5px solid #3A6168;
+		border-radius: 0;
+	}
+}
