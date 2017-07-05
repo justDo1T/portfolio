@@ -1,9 +1,9 @@
 $(document).ready(function() {
 
-	// Changing background of top navigation bar when page is scrolled
+    // Changing background of top navigation bar when page is scrolled
 	$(document).on('scroll', function() {
-		var topNav = $('#top-bar-wrapper');
-    	topNav.toggleClass('scrolled', $(this).scrollTop() > topNav.height());
+	   var topNav = $('#top-bar-wrapper');
+        topNav.toggleClass('scrolled', $(this).scrollTop() > topNav.height());
     });
     if ($(window).scrollTop() > 100) {
         $('#top-bar-wrapper').addClass('scrolled');
@@ -13,13 +13,16 @@ $(document).ready(function() {
 
 	// Transforming hamburger menu-icon to closing X-icon
     $('#menu-icon').on('click', function() {
-    	$(this).toggleClass('change');
+        $(this).toggleClass('change');
     	$('#main-nav').toggleClass('showHide');
+        $('#top-bar-wrapper').toggleClass('topbar-hamburger-on');
+        $('#link-portfolio, #link-technology, #link-contact').addClass('animated bounceInLeft');
+        $('#link-offer, #link-team').addClass('animated bounceInRight');
     });
 
     // Flip effect
     $('.flip-container').on('click', function() {
-    	$(this).toggleClass('clicked');
+        $(this).toggleClass('clicked');
     });
 
     // Slide show/hide team-member details
@@ -48,26 +51,39 @@ $(document).ready(function() {
     // Smooth scroll navigation links (https://github.com/flesler/jquery.scrollTo)
     $.extend($.scrollTo.defaults, {
     	// change default settings here
-    	// adjusting to fixed navigation bar, which is always on top (width: 82px)
-    	offset: {top: -82}
+    	// adjusting to fixed navigation bar, which is always on top (width: 79px)
+    	offset: {top: -79}
 	});
 	// after comma put time length in ms
 	$('#logo').on('click', function() {
-   		$(window).scrollTo($('body'), 1000);
+   	    $(window).scrollTo($('body'), 1000);
+        clearMenu();
    	});
    	$('#link-portfolio, #start-button').on('click', function() {
    		$(window).scrollTo($('#portfolio'), 1000);
+        clearMenu();
    	});
    	$('#link-offer').on('click', function() {
    		$(window).scrollTo($('#offer'), 1000);
+        clearMenu();
    	});
    	$('#link-technology').on('click', function() {
    		$(window).scrollTo($('#technology'), 1000);
+        clearMenu();
    	});
     $('#link-team').on('click', function() {
    		$(window).scrollTo($('#team'), 1000);
+        clearMenu();
    	});
    	$('#link-contact').on('click', function() {
    		$(window).scrollTo($('#contact'), 1000);
+        clearMenu();
    	});
+
+    // Removing hamburger menu options after click in some menu button
+    function clearMenu() {
+        $('#menu-icon').removeClass('change');
+        $('#main-nav').removeClass('showHide');
+        $('#top-bar-wrapper').removeClass('topbar-hamburger-on');
+    }
 });
