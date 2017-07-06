@@ -201,7 +201,8 @@ nav ul li a:hover {
 
 #portfolio-main {
 	width: 100%;
-	margin-top: 5%;
+	margin-top: 3%;
+	margin-bottom: 3%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -212,11 +213,12 @@ nav ul li a:hover {
 .flip-container {
 	perspective: 1000px;
 	width: 33.33333%;
-	height: 270px;
+	max-width: 400px;
 	flex-grow: 1;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	margin-bottom: 30px;
 }
 
 /* flip the photo when clicked */
@@ -227,8 +229,9 @@ nav ul li a:hover {
 .flipper {
 	width: calc(100% - 50px);
 	height: 0;
+	max-width: 350px;
+	max-height: 230px;
 	padding-bottom: calc(65.7% - 30px);
-
 	/* flip speed*/
 	transition: 2s;
 	transform-style: preserve-3d;
@@ -238,13 +241,14 @@ nav ul li a:hover {
 .front, .back {
 	width: 100%;
 	height: 100%;
-
-	/* hide back of photo during swap and when .front is still hovered */
-	backface-visibility: hidden;
+	max-width: 350px;
+	max-height: 230px;
 	cursor: pointer;
 	position: absolute;
 	top: 0;
 	left: 0;
+	/* hide back of photo during swap and when .front is still hovered */
+	backface-visibility: hidden;
 }
 
 .front img {
@@ -1057,9 +1061,18 @@ nav ul li a:hover {
 	/*--- End Homepage Section ---*/
 
 	/*--- Start Portfolio Section ---*/
-
+	.flip-container {
+		width: 50%;
+	}
 	/*--- End Portfolio Section ---*/
 
+}
+
+@media screen and (max-width: 1050px) {
+
+	#portfolio-header p {
+		font-size: 2.2rem;
+	}
 }
 
 /*--- Hamburger Starts --*/
@@ -1116,7 +1129,9 @@ nav ul li a:hover {
   		border-bottom: none;
 	}
 	/*--- End Homepage Section ---*/
-
+	.line-break {
+		display: none;
+	}
 }
 
 @media screen and (max-width: 850px) {
@@ -1127,6 +1142,22 @@ nav ul li a:hover {
 	}
 	/*--- End Homepage Section ---*/
 
+}
+
+@media screen and (max-width: 750px) {
+	
+	#portfolio-header h2 {
+		font-size: 3.5rem;
+		padding: 20px 0 20px 0;
+	}
+
+	#portfolio-header p {
+		font-size: 2rem;
+	}
+
+	.flip-container {
+		width: 100%;
+	}
 }
 
 @media screen and (max-width: 650px) {
@@ -1144,6 +1175,12 @@ nav ul li a:hover {
 
 }
 
+@media screen and (max-width: 600px) {
+
+
+
+}
+
 @media screen and (max-width: 550px) {
 
 	/*--- Start Homepage Section ---*/
@@ -1158,6 +1195,9 @@ nav ul li a:hover {
 	}
 	/*--- End Homepage Section ---*/
 
+	#portfolio-header p {
+		font-size: 1.8rem;
+	}
 }
 
 @media screen and (max-width: 450px) {
@@ -1172,7 +1212,20 @@ nav ul li a:hover {
 		padding: 12px 20px
 	}
 	/*--- End Homepage Section ---*/
+
 }
+@media screen and (max-width: 420px) {
+	
+	#portfolio-header h2 {
+		font-size: 2.8rem;
+		padding: 20px 0 15px 0;
+	}
+
+	#portfolio-header p {
+		font-size: 1.6rem;
+	}
+}
+
 
 @media screen and (max-width: 370px) {
 
