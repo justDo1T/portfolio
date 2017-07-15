@@ -56,6 +56,21 @@ p {
 	color: #000;
 	border: 2px solid #337579;
 }
+
+#top-bar-wrapper.scrolled nav a:focus {
+	outline: none;
+	color: #000;
+	border: 2px solid #337579;
+}
+
+#top-bar-wrapper.scrolled #logo:focus {
+	outline: 2px solid #337579;
+	outline-offset: 10px;
+}
+
+#top-bar-wrapper.scrolled #menu-icon:focus {
+	outline: 2px solid #337579;
+}
 /*--- End Top Bar Scrolled --*/
 
 #logo {
@@ -67,12 +82,21 @@ p {
 	float: left;
 }
 
+#logo:focus {
+	outline: 2px solid #CBDFD6;
+	outline-offset: 10px;
+}
+
 /*--- Start Menu Icon With Animation --*/
 #menu-icon {
     display: none;
     cursor: pointer;
     padding: 7px;
     margin: 14px 15px 10px 0;
+}
+
+#menu-icon:focus {
+	outline: 2px solid #CBDFD6;
 }
 
 #bar1, #bar2, #bar3 {
@@ -129,6 +153,13 @@ nav ul li a:hover {
 	border-radius: 10px;
 }
 
+nav ul li a:focus {
+	outline: none;
+	color: #CBDFD6;
+	border: 1px solid #CBDFD6;
+	border-radius: 10px;
+}
+
 #header-wrapper #container {
 	display: table;
 	width: 100%;
@@ -172,6 +203,13 @@ nav ul li a:hover {
 #start-button:hover {
 	color: #CBDFD6;
 	border: 2px solid #CBDFD6;
+}
+
+#start-button:focus {
+	outline: none;
+	color: #CBDFD6;
+	border: 2px solid #CBDFD6;
+	background-color: rgba(203, 223, 214, 0.15);
 }
 /*---------- End Homepage Section ----------*/
 
@@ -611,13 +649,16 @@ nav ul li a:hover {
 
 #technology-main ul {
 	list-style-type: none;
-	font-size: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 #technology-main ul li {
 	position: relative;
 	display: inline-block;
 	width: 20%;
+	max-width: 250px;
 	height: 150px;
 }
 
@@ -628,6 +669,10 @@ nav ul li a:hover {
  	transform: translateY(-50%) translateX(-50%);
  	max-width: 160px;
  	max-height: 80px;
+}
+
+#mysql-img {
+	top: 37% !important;
 }
 /*---------- End Technology Section ----------*/
 
@@ -665,32 +710,29 @@ nav ul li a:hover {
 
 #team-main {
 	width: 100%;
-	margin-top: 7%;
-	padding-bottom: 6%;
+	margin-top: 3%;
+	padding-bottom: 4%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .member {
-	float: left;
 	width: 25%;
+	max-width: 350px;
 	text-align: center;
-}
-
-.clearfix {
-	clear: both;
-	visibility: hidden;
-    font-size: 0;
-    content: " ";
-    height: 0;
+	padding: 40px 15px 20px 15px;
+	box-sizing: border-box;
 }
 
 .member img {
 	width: 200px;
-	height: 200px;
+	max-width: calc(100% - 20px);
 	border-radius: 50%;
 }
 
 .member h4 {
-	margin-top: 8%;
+	margin-top: 20px;
 	font-size: 2.4rem;
 	font-weight: 400;
 	color: #ED8104;
@@ -704,7 +746,7 @@ nav ul li a:hover {
 }
 
 .about-button {
-	margin-top: 10%;
+	margin-top: 22px;
 	padding: 12px 20px;
 	font-size: 1.6rem;
 	font-weight: 400;
@@ -726,13 +768,34 @@ nav ul li a:hover {
 	cursor: pointer;
 }
 
+.about-button:focus {
+	outline: none;
+	background-color: #E1E7E9;
+	color: #244C31;
+	border: 1px solid transparent;
+	transform: scale(1.1);
+	cursor: pointer;
+}
+
 .about-member {
+	position: relative;
+}
+
+.about-member-info {
+	position: absolute;
+	width: 100%;
+}
+
+.about-member-info.hidden {
+	visibility: hidden;
+}
+
+.space {
 	display: none;
 }
 
-.about-member p {
-	margin-top: 20px;
-	padding: 20px 5px 0 35px;
+.about-member-info p {
+	padding: 40px 0 0 35px;
 	text-align: left;
 	font-size: 1.6rem;
 	font-weight: 300;
@@ -753,6 +816,13 @@ nav ul li a:hover {
 }
 
 .social-icons:hover {
+	background-color: #E1E7E9;
+	color: #244C31;
+	transform: scale(1.15);
+}
+
+.social-icons:focus {
+	outline: none;
 	background-color: #E1E7E9;
 	color: #244C31;
 	transform: scale(1.15);
@@ -822,6 +892,14 @@ nav ul li a:hover {
 	float: left;
 	margin: 0 auto;
 	padding: 20px;
+}
+
+.clearfix {
+	clear: both;
+	visibility: hidden;
+    font-size: 0;
+    content: " ";
+    height: 0;
 }
 
 .one-two-contact input {
@@ -932,6 +1010,8 @@ nav ul li a:hover {
 
 #map-button:focus {
 	outline: none;
+	background-color: rgba(252, 153, 5, 0.45);
+	box-shadow: 0px 0px 3px 2px rgba(237, 129, 4, 0.5);
 }
 
 #map-button:active {
@@ -975,22 +1055,28 @@ nav ul li a:hover {
 	color: #ED8104;
 }
 
-#footer-contacts p {
+.contact-details p {
 	font-size: 1.6rem;
 	vertical-align: middle;
 }
 
-#footer-contacts a {
+.contact-details a {
 	text-decoration: none;
 	color: #EFEFEF;
 }
 
-#footer-contacts a:hover {
+.contact-details a:hover {
 	text-decoration: underline;
 	color: #CDCDCD;
 }
 
-#footer-contacts i {
+.contact-details a:focus {
+	outline: none;
+	text-decoration: underline;
+	color: #CDCDCD;
+}
+
+.contact-details i {
 	margin: 10px 15px 10px 10px;
 	font-size: 2.2rem;
 	width: 38px;
@@ -1002,7 +1088,7 @@ nav ul li a:hover {
 	border-radius: 50%;
 }
 
-#footer-contacts .fa-envelope {
+.contact-details .fa-envelope {
 	font-size: 1.9rem;
 }
 
@@ -1039,6 +1125,12 @@ nav ul li a:hover {
 	transform: scale(1.1);
 }
 
+#social-contacts ul li a:focus {
+	outline: none;
+	background-color: #ED8104;
+	transform: scale(1.1);
+}
+
 #social-contacts ul li a i {
 	font-size: 2.8rem;
 	line-height: 50px;
@@ -1063,6 +1155,12 @@ nav ul li a:hover {
 	color: #FCB605;
 	text-decoration: underline;
 }
+
+#copyright a:focus {
+	outline: none;
+	color: #FCB605;
+	text-decoration: underline;
+}
 /*---------- End Footer Section ----------*/
 
 
@@ -1078,6 +1176,12 @@ nav ul li a:hover {
 		padding: 15px;
 		padding-top: 0;
 	}
+
+@media screen and (max-width: 1200px) {
+	.about-member-info p {
+		padding-left: 20px;
+	}
+}
 
 @media screen and (max-width: 1100px) {
 
@@ -1100,11 +1204,29 @@ nav ul li a:hover {
 	.one-third-offer h3 {
 		padding: 10px 0 20px 0;
 	}
+
+	#technology-main {
+		margin-bottom: 2%;
+	}
+
+	#technology-main ul li {
+		width: 25%;
+	}
 }
 
 @media screen and (max-width: 1050px) {
 
 	#portfolio-header p, #offer-header p, #technology-header p, #team-header p, #contact-header p {
+		font-size: 2.2rem;
+	}
+
+	.about-member-info p {
+		padding-left: 10px;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	.member h4 {
 		font-size: 2.2rem;
 	}
 }
@@ -1162,9 +1284,48 @@ nav ul li a:hover {
   		background-color: rgba(203, 223, 214, 0.96);
   		border-bottom: none;
 	}
+
+	#top-bar-wrapper.topbar-hamburger-on nav ul li a:focus {
+		color: #000;
+		border: 2px solid #337579;
+	}
+
 	/*--- End Homepage Section ---*/
 	.portfolio-line-break {
 		display: none;
+	}
+
+	.member {
+		width: 50%;
+	}
+
+	.about-member {
+		position: static;
+		margin-top: 25px;
+	}
+
+	.about-member-info {
+		position: absolute;
+		left: 30px;
+		width: calc(100% - 60px);
+		border: 1px solid #EFEFEF;
+		border-radius: 10px;
+	}
+
+	.about-member-info p {
+		text-align: justify;
+		padding: 25px 25px 5px 25px;
+	}
+
+	.social-icons {
+		font-size: 2rem;
+		width: 30px;
+		height: 30px;
+		margin: 20px;
+	}
+
+	.member h4 {
+		margin-top: 15px;
 	}
 }
 
@@ -1175,6 +1336,10 @@ nav ul li a:hover {
 		font-size: 8rem;
 	}
 	/*--- End Homepage Section ---*/
+
+	#technology-main ul li {
+		width: 33.333%;
+	}
 
 }
 
@@ -1211,6 +1376,9 @@ nav ul li a:hover {
 	}
 	/*--- End Homepage Section ---*/
 
+	#technology-main ul li {
+		width: 50%;
+	}
 }
 
 @media screen and (max-width: 600px) {
@@ -1236,6 +1404,24 @@ nav ul li a:hover {
 	#portfolio-header p, #technology-header p, #team-header p, #contact-header p {
 		font-size: 1.8rem;
 	}
+
+	#team-main {
+		margin-top: 4%;
+	}
+
+	.member {
+		padding: 30px 15px 15px 15px;
+	}
+
+	.member h4 {
+		font-size: 2rem;
+	}
+
+	.about-button {
+		font-size: 1.5rem;
+		letter-spacing: 0.4px;
+	}
+
 }
 
 @media screen and (max-width: 500px) {
@@ -1258,7 +1444,18 @@ nav ul li a:hover {
 	}
 	/*--- End Homepage Section ---*/
 
+	#technology-main ul li {
+		width: 100%;
+	}
+
+	#mysql-img {
+		top: 50% !important;
+	}
+
+	.member {
+		width: 100%;
 }
+
 @media screen and (max-width: 400px) {
 	
 	#portfolio-header h2, #offer-header h2, #technology-header h2, #team-header h2, #contact-header h2 {
@@ -1333,6 +1530,18 @@ nav ul li a:hover {
 
 	.back p {
 		font-size: 1.5rem;
+	}
+
+	.member img {
+		width: 180px;
+	}
+
+	.about-member-info p {
+		font-size: 1.5rem;
+	}
+
+	.social-icons {
+		margin: 20px 13px;
 	}
 }
 

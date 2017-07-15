@@ -26,12 +26,33 @@ $(document).ready(function() {
     });
 
     // Slide show/hide team-member details
+    var prevBtn;
     $('.about-button').on('click', function() {
-    	$(this).parent().children('.about-member').slideToggle();
+        var $parent = $(this).parent();
+        var btn = this.id;
+        if (btn != prevBtn && $(window).width() < 950) {
+             reset($parent.parent());
+        }
+        prevBtn = btn;
+        $parent.find('.space').css('height', $parent.find('.about-member-info').height()+'px');
+        customSlideToggle($parent.find('.about-member-info'));
+        $parent.find('.space').slideToggle(600);
+        $(this).blur();
+    });
+
+    // Adjust space under team-member when resizing the window
+    $(window).resize(function() {
+        $('.space').css('height', $('.about-member-info').height()+'px');
+    });
+
+    // Removes focus after click or using tab -> enter
+    $('.social-icons, .stop-focus').on('click', function() {
+        $(this).blur();
     });
 
     // Show/hide google maps in contact area
     $('#map-button').on('click', function() {
+        $(this).blur();
     	$('#contact-container').toggleClass('mapToggle');
     	$('#google-map-container').toggleClass('active');
     	$(this).text(function(i, text) {
@@ -57,10 +78,12 @@ $(document).ready(function() {
 	// after comma put time length in ms
 	$('#logo').on('click', function() {
    	    $(window).scrollTo($('body'), 1000);
+        $(this).blur();
         clearMenu();
    	});
    	$('#link-portfolio, #start-button').on('click', function() {
    		$(window).scrollTo($('#portfolio'), 1000);
+        $(this).blur();
         clearMenu();
    	});
    	$('#link-offer').on('click', function() {
@@ -85,5 +108,39 @@ $(document).ready(function() {
         $('#menu-icon').removeClass('change');
         $('#main-nav').removeClass('showHide');
         $('#top-bar-wrapper').removeClass('topbar-hamburger-on');
+    }
+
+    // Acts like a slideToggle but for 'visibility: hidden' elements
+    function customSlideToggle(e) {
+        if (e.hasClass('hidden')) {
+            e.hide();
+            e.removeClass('hidden')
+            e.slideDown(600, function() {
+                if ($(window).width() < 550) {
+                    $(window).scrollTo(e.parent().parent().children('h4'), 600);
+                } else if ($(window).width() < 950)  {
+                    $(window).scrollTo(e.parent().parent().children('img'), 600);
+                }
+            });
+        } else {
+            e.slideUp(600, function() {
+                e.addClass('hidden');
+            });
+        }
+    }
+
+    function reset(e) {
+        e.find('.about-member-info').each(function() {
+            if (!$(this).hasClass('hidden')) {
+                $(this).slideUp(600, function() {
+                    $(this).addClass('hidden');
+                });
+            }
+        });
+        e.find('.space').each(function() {
+            if ($(this).css('display') == 'block') {
+                $(this).slideUp(600);
+            }
+        });
     }
 });

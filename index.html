@@ -16,7 +16,7 @@
 				<div id="top-bar">
 					<a id="logo" class="animated bounceInLeft" href="#" title="Go back to homepage"></a>
 					<nav class="animated bounceInRight">
-						<div id="menu-icon">
+						<div id="menu-icon" tabindex="0">
  							<div id="bar1"></div>
  							<div id="bar2"></div>
   							<div id="bar3"></div>
@@ -234,7 +234,7 @@
 						<li><img src="img/technology/CSS3.svg" alt="CSS 3"></li>
 						<li><img src="img/technology/javascript.svg" alt="JavaScript"></li>
 						<li><img src="img/technology/php.svg" alt="PHP"></li>
-						<li><img src="img/technology/mysql.svg" alt="MySQL"></li>
+						<li><img id="mysql-img" src="img/technology/mysql.svg" alt="MySQL"></li>
 						<li><img src="img/technology/symfony.svg" alt="Symfony"></li>
 						<li><img src="img/technology/react.svg" alt="React"></li>
 						<li><img src="img/technology/angularjs.svg" alt="AngularJS"></li>
@@ -255,57 +255,68 @@
 						<img src="img/team/adrian-siewiera.jpg">
 						<h4>Adrian Siewiera</h4>
 						<p>Front-end developer</p>
-						<button class="about-button" type="button">About Adrian</button>
+						<button class="about-button" id="one" type="button">About Adrian</button>
 						<div class="about-member">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lacinia tellus fermentum risus maximus laoreet sit amet quis ante. Suspendisse sagittis ante lectus, ac eleifend sem mollis non. Aliquam ipsum tortor, aliquam consectetur nibh id, ultrices ultricies ex. Duis maximus dapibus risus, vel vulputate tellus pretium nec. Pellentesque mattis lacinia turpis ut vehicula. Nulla malesuada nec metus vitae cursus. Vivamus rutrum ante nisl.</p>
-							<a class="social-icons" href="https://twitter.com" title="Twitter profile" target="_blank"><i class="fa fa-twitter"></i></a>
-							<a class="social-icons" href="https://github.com" title="GitHub profile" target="_blank"><i class="fa fa-github"></i></a>
-							<a class="social-icons" href="https://linkedin.com" title="LinkedIn profile" target="_blank"><i class="fa fa-linkedin"></i></a>
+							<div class="about-member-info hidden">
+								<p>1: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lacinia tellus fermentum risus maximus laoreet sit amet quis ante. Suspendisse sagittis ante lectus, ac eleifend sem mollis non. Aliquam ipsum tortor, aliquam consectetur nibh id, ultrices ultricies ex. Duis maximus dapibus risus, vel vulputate tellus pretium nec. Pellentesque mattis lacinia turpis ut vehicula. Nulla malesuada nec metus vitae cursus. Vivamus rutrum ante nisl.</p>
+								<a class="social-icons" href="https://twitter.com" title="Twitter profile" target="_blank"><i class="fa fa-twitter"></i></a>
+								<a class="social-icons" href="https://github.com" title="GitHub profile" target="_blank"><i class="fa fa-github"></i></a>
+								<a class="social-icons" href="https://linkedin.com" title="LinkedIn profile" target="_blank"><i class="fa fa-linkedin"></i></a>
+							</div>
+							<div class="space"></div>
 						</div>
 					</article>
 					<article class="member">
 						<img src="img/team/tomasz-piatek.png">
 						<h4>Tomasz Piątek</h4>
 						<p>Front-end developer</p>
-						<button class="about-button" type="button">About Tomasz</button>
+						<button class="about-button" id="two" type="button">About Tomasz</button>
 						<div class="about-member">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lacinia tellus fermentum risus maximus laoreet sit amet quis ante. Suspendisse sagittis ante lectus, ac eleifend sem mollis non. Aliquam ipsum tortor, aliquam consectetur nibh id, ultrices ultricies ex. Duis maximus dapibus risus, vel vulputate tellus pretium nec. Pellentesque mattis lacinia turpis ut vehicula. Nulla malesuada nec metus vitae cursus. Vivamus rutrum ante nisl.</p>
-							<a class="social-icons" href="https://twitter.com" title="Twitter profile" target="_blank"><i class="fa fa-twitter"></i></a>
-							<a class="social-icons" href="https://github.com" title="GitHub profile" target="_blank"><i class="fa fa-github"></i></a>
-							<a class="social-icons" href="https://linkedin.com" title="LinkedIn profile" target="_blank"><i class="fa fa-linkedin"></i></a>
+							<div class="about-member-info hidden">
+								<p>2: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lacinia tellus fermentum risus maximus laoreet sit amet quis ante. Suspendisse sagittis ante lectus, ac eleifend sem mollis non. Aliquam ipsum tortor, aliquam consectetur nibh id, ultrices ultricies ex. Duis maximus dapibus risus, vel vulputate tellus pretium nec. Pellentesque mattis lacinia turpis ut vehicula. Nulla malesuada nec metus vitae cursus. Vivamus rutrum ante nisl.</p>
+								<a class="social-icons" href="https://twitter.com" title="Twitter profile" target="_blank"><i class="fa fa-twitter"></i></a>
+								<a class="social-icons" href="https://github.com" title="GitHub profile" target="_blank"><i class="fa fa-github"></i></a>
+								<a class="social-icons" href="https://linkedin.com" title="LinkedIn profile" target="_blank"><i class="fa fa-linkedin"></i></a>
+							</div>
+							<div class="space"></div>
 						</div>
 					</article>
 					<article class="member">
 						<img src="img/team/wojciech-samek.jpg">
 						<h4>Wojciech Samek</h4>
 						<p>Back-end developer</p>
-						<button class="about-button" type="button">About Wojciech</button>
+						<button class="about-button" id="three" type="button">About Wojtek</button>
 						<div class="about-member">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lacinia tellus fermentum risus maximus laoreet sit amet quis ante. Suspendisse sagittis ante lectus, ac eleifend sem mollis non. Aliquam ipsum tortor, aliquam consectetur nibh id, ultrices ultricies ex. Duis maximus dapibus risus, vel vulputate tellus pretium nec. Pellentesque mattis lacinia turpis ut vehicula. Nulla malesuada nec metus vitae cursus. Vivamus rutrum ante nisl.</p>
-							<a class="social-icons" href="https://twitter.com" title="Twitter profile" target="_blank"><i class="fa fa-twitter"></i></a>
-							<a class="social-icons" href="https://github.com" title="GitHub profile" target="_blank"><i class="fa fa-github"></i></a>
-							<a class="social-icons" href="https://linkedin.com" title="LinkedIn profile" target="_blank"><i class="fa fa-linkedin"></i></a>
+							<div class="about-member-info hidden">
+								<p>3: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lacinia tellus fermentum risus maximus laoreet sit amet quis ante. Suspendisse sagittis ante lectus, ac eleifend sem mollis non. Aliquam ipsum tortor, aliquam consectetur nibh id, ultrices ultricies ex. Duis maximus dapibus risus, vel vulputate tellus pretium nec. Pellentesque mattis lacinia turpis ut vehicula. Nulla malesuada nec metus vitae cursus. Vivamus rutrum ante nisl.</p>
+								<a class="social-icons" href="https://twitter.com" title="Twitter profile" target="_blank"><i class="fa fa-twitter"></i></a>
+								<a class="social-icons" href="https://github.com" title="GitHub profile" target="_blank"><i class="fa fa-github"></i></a>
+								<a class="social-icons" href="https://linkedin.com" title="LinkedIn profile" target="_blank"><i class="fa fa-linkedin"></i></a>
+							</div>
+							<div class="space"></div>
 						</div>
 					</article>
 					<article class="member">
 						<img src="img/team/jaroslaw-blazkow.jpg">
 						<h4>Jarosław Błażków</h4>
 						<p>Back-end developer</p>
-						<button class="about-button" type="button">About Jarosław</button>
+						<button class="about-button" id="four" type="button">About Jarek</button>
 						<div class="about-member">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lacinia tellus fermentum risus maximus laoreet sit amet quis ante. Suspendisse sagittis ante lectus, ac eleifend sem mollis non. Aliquam ipsum tortor, aliquam consectetur nibh id, ultrices ultricies ex. Duis maximus dapibus risus, vel vulputate tellus pretium nec. Pellentesque mattis lacinia turpis ut vehicula. Nulla malesuada nec metus vitae cursus. Vivamus rutrum ante nisl.</p>
-							<a class="social-icons" href="https://twitter.com" title="Twitter profile" target="_blank"><i class="fa fa-twitter"></i></a>
-							<a class="social-icons" href="https://github.com" title="GitHub profile" target="_blank"><i class="fa fa-github"></i></a>
-							<a class="social-icons" href="https://linkedin.com" title="LinkedIn profile" target="_blank"><i class="fa fa-linkedin"></i></a>
+							<div class="about-member-info hidden">
+								<p>4: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lacinia tellus fermentum risus maximus laoreet sit amet quis ante. Suspendisse sagittis ante lectus, ac eleifend sem mollis non. Aliquam ipsum tortor, aliquam consectetur nibh id, ultrices ultricies ex. Duis maximus dapibus risus, vel vulputate tellus pretium nec. Pellentesque mattis lacinia turpis ut vehicula. Nulla malesuada nec metus vitae cursus. Vivamus rutrum ante nisl.</p>
+								<a class="social-icons" href="https://twitter.com" title="Twitter profile" target="_blank"><i class="fa fa-twitter"></i></a>
+								<a class="social-icons" href="https://github.com" title="GitHub profile" target="_blank"><i class="fa fa-github"></i></a>
+								<a class="social-icons" href="https://linkedin.com" title="LinkedIn profile" target="_blank"><i class="fa fa-linkedin"></i></a>
+							</div>
+							<div class="space"></div>
 						</div>
 					</article>
-					<div class="clearfix"></div>
 				</div>
 			</div>
 		</section>
 		<section id="contact">
 			<div id="google-map-container">
-				<iframe id="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5009.857516854729!2d17.05546838290666!3d51.10977458070387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470fe82b7241826b%3A0xd0186a8762847c09!2sGrunwaldzki+Centre%2C+Wroc%C5%82aw!5e0!3m2!1spl!2spl!4v1498737140854" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+				<iframe id="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5009.857516854729!2d17.05546838290666!3d51.10977458070387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470fe82b7241826b%3A0xd0186a8762847c09!2sGrunwaldzki+Centre%2C+Wroc%C5%82aw!5e0!3m2!1spl!2spl!4v1498737140854" width="100%" height="100%" frameborder="0" style="border:0" $('.class') tabindex="-1" allowfullscreen></iframe>
 			</div>
 			<button id="map-button" type="button" title="Google map">Show map</button>
 			<div id="contact-container">
@@ -344,25 +355,25 @@
 				</div>
 				<div class="contact-details">
 					<i class="fa fa-phone"></i>
-					<p><a href="tel:+48692473758" title="Phone number">+48 692 473 758</a></p>
+					<p><a class="stop-focus" href="tel:+48692473758" title="Phone number">+48 692 473 758</a></p>
 				</div>
 				<div class="contact-details">
 					<i class="fa fa-envelope"></i>
-					<p><a href="mailto:contact@ssss.com" title="E-mail address">contact@ssss.com</a></p>
+					<p><a class="stop-focus" href="mailto:contact@ssss.com" title="E-mail address">contact@ssss.com</a></p>
 				</div>
 				<div class="clearfix"></div>
 			</div>
 			<div id="social-contacts">
 				<ul>
-					<li><a href="https://facebook.com" target="_blank" title="SSSS Facebook profile"><i class="fa fa-facebook"></i></a></li>
-					<li><a href="https://twitter.com" target="_blank" title="SSSS Twitter profile"><i class="fa fa-twitter"></i></a></li>
-					<li><a href="https://linkedin.com" target="_blank" title="SSSS LinkedIn profile"><i class="fa fa-linkedin"></i></a></li>
-					<li><a href="https://instagram.com" target="_blank" title="SSSS Instagram profile"><i class="fa fa-instagram"></i></a></li>
+					<li><a class="stop-focus" href="https://facebook.com" target="_blank" title="SSSS Facebook profile"><i class="fa fa-facebook"></i></a></li>
+					<li><a class="stop-focus" href="https://twitter.com" target="_blank" title="SSSS Twitter profile"><i class="fa fa-twitter"></i></a></li>
+					<li><a class="stop-focus" href="https://linkedin.com" target="_blank" title="SSSS LinkedIn profile"><i class="fa fa-linkedin"></i></a></li>
+					<li><a class="stop-focus" href="https://instagram.com" target="_blank" title="SSSS Instagram profile"><i class="fa fa-instagram"></i></a></li>
 				</ul>
 			</div>
 		</div>
 		<div id="copyright">
-			<p>SSSS &copy; 2017<span style="display:inline-block; width: 60px;"></span>Designed by <a href="https://www.facebook.com/adrian.siewiera" target="_blank" title="Designer Facebook profile">Adrian Siewiera</a></p>
+			<p>SSSS &copy; 2017<span style="display:inline-block; width: 60px;"></span>Designed by <a class="stop-focus" href="https://www.facebook.com/adrian.siewiera" target="_blank" title="Designer Facebook profile">Adrian Siewiera</a></p>
 		</div>
 	</footer>
 
