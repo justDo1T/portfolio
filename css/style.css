@@ -860,11 +860,12 @@ nav ul li a:focus {
 #contact-wrapper {
 	max-width: 1200px;
 	margin: 0 auto;
-	padding: 4% 3% 2% 3%;
+	padding: 4% 3%;
 }
 
 #contact-header {
 	text-align: center;
+	margin-bottom: 22px;
 }
 
 #contact-header h2 {
@@ -882,29 +883,25 @@ nav ul li a:focus {
 
 #contact-main {
 	max-width: 800px;
-	margin: 5% auto 5% auto;
+	margin: 5% auto 30px auto;
 	font-size: 1.8rem;
 }
 
+#contact-main form {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
 .one-two-contact {
-	box-sizing: border-box;
 	width: 50%;
-	float: left;
-	margin: 0 auto;
+	box-sizing: border-box;
 	padding: 20px;
 }
 
-.clearfix {
-	clear: both;
-	visibility: hidden;
-    font-size: 0;
-    content: " ";
-    height: 0;
-}
-
 .one-two-contact input {
-	box-sizing: border-box;
 	width: 100%;
+	box-sizing: border-box;
 	padding: 17px;
 	font-size: 1.6rem;
 	font-family: 'Montserrat', sans-serif;
@@ -924,13 +921,14 @@ nav ul li a:focus {
 }
 
 #msg-area {
+	width: 100%;
 	box-sizing: border-box;
 	padding: 20px;
 }
 
 #msg-area textarea {
-	box-sizing: border-box;
 	width: 100%;
+	box-sizing: border-box;
 	min-height: 180px;
 	padding: 17px;
 	font-size: 1.6rem;
@@ -1029,35 +1027,36 @@ nav ul li a:focus {
 	width: 100%;
 	background-color: #244c31;
 	color: #EFEFEF;
-	padding-top: 2.5%;
 }
 
 #footer-wrapper {
 	max-width: 1200px;
 	margin: 0 auto;
-}
-
-#footer-contacts {
-	width: 60%;
-	margin: 0 auto;
+	padding: 0 3%;
 	text-align: center;
 }
 
-#footer-contacts .contact-details {
-	width: 33.333%;
-	display: inline-block;
-	float: left;
-}
-
-#footer-contacts h5 {
-	margin-bottom: 40px;
+#footer-wrapper h5 {
+	padding: 40px 0;
 	font-size: 2.6rem;
 	color: #ED8104;
 }
 
+#footer-contacts {
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.contact-details {
+	width: 33.333%;
+	max-width: 250px;
+}
+
 .contact-details p {
 	font-size: 1.6rem;
-	vertical-align: middle;
 }
 
 .contact-details a {
@@ -1077,7 +1076,7 @@ nav ul li a:focus {
 }
 
 .contact-details i {
-	margin: 10px 15px 10px 10px;
+	margin: 10px 18px;
 	font-size: 2.2rem;
 	width: 38px;
 	height: 38px;
@@ -1093,7 +1092,7 @@ nav ul li a:focus {
 }
 
 #social-contacts {
-	width: 300px;
+	max-width: 300px;
 	margin: 50px auto 30px;
 }
 
@@ -1142,7 +1141,7 @@ nav ul li a:focus {
 }
 
 #copyright p {
-	padding: 20px 0 20px 0;
+	padding: 20px 0;
 }
 
 #copyright a {
@@ -1161,6 +1160,12 @@ nav ul li a:focus {
 	color: #FCB605;
 	text-decoration: underline;
 }
+
+#footer-space {
+	display:inline-block;
+	width: 60px;
+}
+
 /*---------- End Footer Section ----------*/
 
 
@@ -1361,6 +1366,25 @@ nav ul li a:focus {
 	.one-third-offer {
 		width: calc(100% - 20px);
 	}
+
+	#map-button {
+		top: 30px;
+		width: 140px;
+		padding: 10px 15px;
+		font-size: 1.6rem;
+	}
+}
+
+@media screen and (max-width: 700px) {
+
+	.one-two-contact {
+		width: 100%;
+		padding: 12px 20px;
+	}
+
+	#msg-area {
+		padding: 12px 20px;
+	}
 }
 
 @media screen and (max-width: 650px) {
@@ -1422,12 +1446,75 @@ nav ul li a:focus {
 		letter-spacing: 0.4px;
 	}
 
+	.contact-details p {
+		font-size: 1.5rem;
+	}
+
 }
 
 @media screen and (max-width: 500px) {
 
 	.technology-line-break {
 		display: inline;
+	}
+
+	#map-button {
+		top: 20px;
+		width: 90px;
+		padding: 7px 10px;
+		font-size: 1.5rem;
+	}
+
+	.one-two-contact input {
+		font-size: 1.5rem;
+		padding: 14px;
+	}
+
+	#msg-area textarea {
+		font-size: 1.5rem;
+		padding: 14px;
+	}
+
+	#msg-button {
+		font-size: 1.7rem;
+	}
+
+	#footer-wrapper h5 {
+		padding: 30px 0;
+	}
+
+	.contact-details {
+		width: 100%;
+		margin-bottom: 20px;
+		display: flex;
+		justify-content: left;
+		align-items: center;
+	}
+
+	.contact-details p {
+		text-align: left;
+	}
+
+	#social-contacts {
+		margin-top: 30px;
+	}
+
+	#social-contacts ul li a {
+		width: 45px;
+		height: 45px;
+	}
+
+	#social-contacts ul li a i {
+		font-size: 2.5rem;
+		line-height: 45px;
+	}
+
+	#footer-space {
+		width: 40px;
+	}
+
+	#copyright p {
+		font-size: 1.5rem;
 	}
 }
 
@@ -1508,6 +1595,29 @@ nav ul li a:focus {
 	#cart {
 		width: 50px;
 	}
+
+	#map-button {
+		width: 70px;
+		padding: 5px 10px;
+		font-weight: 600;
+	}
+
+	#footer-wrapper h5 {
+		font-size: 2.4rem;
+	}
+
+	.contact-details {
+		margin-bottom: 12px;
+	}
+
+	#social-contacts {
+		margin-top: 25px;
+	}
+
+	#footer-space {
+		width: 20px;
+	}
+
 }
 
 
@@ -1551,5 +1661,19 @@ nav ul li a:focus {
 		font-size: 1.38rem;
 		padding: 10px;
 		padding-top: 0;
+	}
+
+	#social-contacts {
+		max-width: 280px;
+	}
+
+	#footer-space {
+		display: block;
+		width: 0;
+	}
+
+	#copyright p {
+		padding: 15px 0;
+		line-height: 1.5;
 	}
 }
