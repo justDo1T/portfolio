@@ -11,13 +11,27 @@ $(document).ready(function() {
         $('#top-bar-wrapper').removeClass('scrolled');
     }
 
-	// Transforming hamburger menu-icon to closing X-icon
-    $('#menu-icon').on('click', function() {
+    // Add tabIndex to all focusable elements, because on '#menu-icon' click some buttons will toggle this tabIndex (0 / -1)
+    $('#logo, #menu-icon, #start-button, .about-button, #map-button, #msg-button, .stop-focus, input, textarea, .social-icons').attr('tabIndex', '0');
+
+    // Transforming hamburger menu-icon to closing X-icon
+    $('#menu-icon').on('mousedown', function(e) {
         $(this).toggleClass('change');
     	$('#main-nav').toggleClass('showHide');
         $('#top-bar-wrapper').toggleClass('topbar-hamburger-on');
         $('#link-portfolio, #link-technology, #link-contact').addClass('animated bounceInLeft');
         $('#link-offer, #link-team').addClass('animated bounceInRight');
+        $('#start-button, .about-button, #map-button, #msg-button, .stop-focus, input, textarea, .social-icons').attr('tabIndex', function(index, attr) {
+             return attr == 0 ? -1 : 0;
+        });
+        e.preventDefault();
+    });
+
+    // Add enter behavior as a click to '#menu-icon' and '#logo' divs
+    $('#menu-icon, #logo').on('keydown', function(e) {
+        if(e.which === 13) {
+            $(this).mousedown();
+        }
     });
 
     // Flip effect
@@ -55,7 +69,7 @@ $(document).ready(function() {
         $(this).blur();
     	$('#contact-container').toggleClass('mapToggle');
     	$('#google-map-container').toggleClass('active');
-    	$(this).text(function(i, text) {
+    	$(this).text(function(index, text) {
     		return text === "Show map" ? "Hide map" : "Show map";
     	}); 
     });
@@ -76,10 +90,10 @@ $(document).ready(function() {
     	offset: {top: -79}
 	});
 	// after comma put time length in ms
-	$('#logo').on('click', function() {
+	$('#logo').on('mousedown', function(e) {
    	    $(window).scrollTo($('body'), 1000);
-        $(this).blur();
         clearMenu();
+        e.preventDefault();
    	});
    	$('#link-portfolio, #start-button').on('click', function() {
    		$(window).scrollTo($('#portfolio'), 1000);
@@ -108,6 +122,7 @@ $(document).ready(function() {
         $('#menu-icon').removeClass('change');
         $('#main-nav').removeClass('showHide');
         $('#top-bar-wrapper').removeClass('topbar-hamburger-on');
+        $('#start-button, .about-button, #map-button, #msg-button, .stop-focus, input, textarea, .social-icons').attr('tabIndex', '0');
     }
 
     // Acts like a slideToggle but for 'visibility: hidden' elements

@@ -95,7 +95,7 @@ p {
     margin: 14px 15px 10px 0;
 }
 
-#menu-icon:focus {
+#menu-icon:focus { 
 	outline: 2px solid #CBDFD6;
 }
 
@@ -1293,6 +1293,14 @@ nav ul li a:focus {
 	#top-bar-wrapper.topbar-hamburger-on nav ul li a:focus {
 		color: #000;
 		border: 2px solid #337579;
+	}
+
+	#top-bar-wrapper.topbar-hamburger-on #logo:focus {
+		outline: 2px solid #337579;
+	}
+
+	#top-bar-wrapper.topbar-hamburger-on #menu-icon:focus {
+		outline: 2px solid #337579;
 	}
 
 	/*--- End Homepage Section ---*/
