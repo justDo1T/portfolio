@@ -4,7 +4,7 @@
   "description": "Portfolio website",
   "main": "index.js",
   "scripts": {
-    "autoprefixer": "postcss style.css --use autoprefixer --no-map -o css/stylePrefixed.css"
+    "autoprefixer": "postcss style.css --use autoprefixer --no-map -o css/style_prefixed.css"
   },
   "repository": {
     "type": "git",
