@@ -1,0 +1,19 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio website",
+  "main": "index.js",
+  "scripts": {
+    "autoprefixer": "postcss style.css --use autoprefixer --no-map -o css/stylePrefixed.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/justDo1T/portfolio.git"
+  },
+  "author": "Adrian Siewiera",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/justDo1T/portfolio/issues"
+  },
+  "homepage": "https://github.com/justDo1T/portfolio#readme"
+}

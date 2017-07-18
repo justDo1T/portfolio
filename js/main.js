@@ -27,7 +27,7 @@ $(document).ready(function() {
         e.preventDefault();
     });
 
-    // Add enter behavior as a click to '#menu-icon' and '#logo' divs
+    // Add enter behavior as a click
     $('#menu-icon, #logo').on('keydown', function(e) {
         if(e.which === 13) {
             $(this).mousedown();
@@ -131,6 +131,7 @@ $(document).ready(function() {
             e.hide();
             e.removeClass('hidden')
             e.slideDown(600, function() {
+                // Sets window to properly see sliding text
                 if ($(window).width() < 550) {
                     $(window).scrollTo(e.parent().parent().children('h4'), 600);
                 } else if ($(window).width() < 950)  {
@@ -144,6 +145,7 @@ $(document).ready(function() {
         }
     }
 
+    // Slides up info (text) when clicked another button to show another info
     function reset(e) {
         e.find('.about-member-info').each(function() {
             if (!$(this).hasClass('hidden')) {
