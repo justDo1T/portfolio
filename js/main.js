@@ -19,6 +19,7 @@ $(document).ready(function() {
         $(this).toggleClass('change');
     	$('#main-nav').toggleClass('showHide');
         $('#top-bar-wrapper').toggleClass('topbar-hamburger-on');
+        $('#main-nav>li').removeClass('animated bounceInRight');
         $('#link-portfolio, #link-technology, #link-contact').addClass('animated bounceInLeft');
         $('#link-offer, #link-team').addClass('animated bounceInRight');
         $('#start-button, .about-button, #map-button, #msg-button, .stop-focus, input, textarea, .social-icons').attr('tabIndex', function(index, attr) {
