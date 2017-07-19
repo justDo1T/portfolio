@@ -42,7 +42,7 @@ $(document).ready(function() {
 
     // Slide show/hide team-member details
     var prevBtn;
-    $('.about-button').on('click', function() {
+    $('.about-button').on('mousedown', function(e) {
         var $parent = $(this).parent();
         var btn = this.id;
         if (btn != prevBtn && $(window).width() < 950) {
@@ -52,7 +52,7 @@ $(document).ready(function() {
         $parent.find('.space').css('height', $parent.find('.about-member-info').height()+'px');
         customSlideToggle($parent.find('.about-member-info'));
         $parent.find('.space').slideToggle(600);
-        $(this).blur();
+        e.preventDefault();
     });
 
     // Adjust space under team-member when resizing the window
