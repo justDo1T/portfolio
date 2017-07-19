@@ -779,6 +779,7 @@ nav ul li a:focus {
 	color: #244C31;
 	border: 1px solid transparent;
 	transform: scale(1.1);
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
 
 .about-member {
@@ -1708,5 +1709,6 @@ nav ul li a:focus {
 		color: #244C31;
 		border: 1px solid transparent;
 		transform: scale(1.1);
+		-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 	}
 }
