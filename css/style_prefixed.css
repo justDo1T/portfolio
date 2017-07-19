@@ -1030,7 +1030,8 @@ nav ul li a:focus {
 }
 
 .about-button:hover {
-	background-color: #E1E7E9;
+	/*background-color: #E1E7E9; */
+	background-color: red;
 	color: #244C31;
 	border: 1px solid transparent;
 	-webkit-transform: scale(1.1);
