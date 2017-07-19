@@ -1703,12 +1703,4 @@ nav ul li a:focus {
 		transform: scale(1.1);
 	}
 
-	.about-button:active {
-		outline: none;
-		background-color: #E1E7E9;
-		color: #244C31;
-		border: 1px solid transparent;
-		transform: scale(1.1);
-		-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-	}
 }
