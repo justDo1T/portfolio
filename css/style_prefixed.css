@@ -2004,3 +2004,22 @@ nav ul li a:focus {
 		line-height: 1.5;
 	}
 }
+
+@media (hover: none) {
+
+	.about-button {
+		/*background-color: #E1E7E9; */
+		background-color: transparent;
+		color: #EFEFEF;
+		border: 1px solid #EFEFEF;
+	}
+
+	.about-button:hover {
+		/*background-color: #E1E7E9; */
+		background-color: transparent;
+		color: #EFEFEF;
+		border: 1px solid #EFEFEF;
+		-webkit-transform: scale(1.1);
+		        transform: scale(1.1);
+	}
+}
