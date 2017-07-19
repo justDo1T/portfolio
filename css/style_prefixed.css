@@ -1029,16 +1029,14 @@ nav ul li a:focus {
 	transition: all ease .3s;
 }
 
-@media (hover:hover) {
-	.about-button:hover {
-		/*background-color: #E1E7E9; */
-		background-color: red;
-		color: #244C31;
-		border: 1px solid transparent;
-		-webkit-transform: scale(1.1);
-		        transform: scale(1.1);
-		cursor: pointer;
-	}
+.about-button:hover {
+	/*background-color: #E1E7E9; */
+	background-color: red;
+	color: #244C31;
+	border: 1px solid transparent;
+	-webkit-transform: scale(1.1);
+	        transform: scale(1.1);
+	cursor: pointer;
 }
 
 .about-button:active {
@@ -2005,4 +2003,17 @@ nav ul li a:focus {
 		padding: 15px 0;
 		line-height: 1.5;
 	}
+}
+
+@media (hover: none) {
+
+	.about-button:hover {
+		/*background-color: #E1E7E9; */
+		background-color: transparent;
+		color: #EFEFEF;
+		border: 1px solid #EFEFEF;
+		-webkit-transform: scale(1.1);
+		        transform: scale(1.1);
+	}
+
 }
