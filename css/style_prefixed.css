@@ -288,16 +288,20 @@ nav ul li a:focus {
 
 .flipper {
 	width: calc(100% - 50px);
-	height: 0;
 	max-width: 350px;
 	max-height: 230px;
-	padding-bottom: calc(65.7% - 30px);
 	/* flip speed*/
 	-webkit-transition: 2s;
 	transition: 2s;
 	-webkit-transform-style: preserve-3d;
 	        transform-style: preserve-3d;
 	position: relative;
+}
+
+.flipper:after {
+	content: "";
+	display: block;
+	padding-bottom: 66%;
 }
 
 .front, .back {
