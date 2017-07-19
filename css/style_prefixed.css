@@ -1049,6 +1049,16 @@ nav ul li a:focus {
 	cursor: pointer;
 }
 
+.about-button:active {
+	outline: none;
+	background-color: #E1E7E9;
+	color: #244C31;
+	border: 1px solid transparent;
+	-webkit-transform: scale(1.1);
+	        transform: scale(1.1);
+	cursor: pointer;
+}
+
 .about-member {
 	position: relative;
 }
@@ -2006,13 +2016,6 @@ nav ul li a:focus {
 }
 
 @media (hover: none) {
-
-	.about-button {
-		/*background-color: #E1E7E9; */
-		background-color: transparent;
-		color: #EFEFEF;
-		border: 1px solid #EFEFEF;
-	}
 
 	.about-button:hover {
 		/*background-color: #E1E7E9; */
