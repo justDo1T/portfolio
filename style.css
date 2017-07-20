@@ -232,12 +232,6 @@ nav ul li a:active {
 	border: 3px solid #CBDFD6;
 	background-color: rgba(203, 223, 214, 0.15);
 }
-
-#start-button:active {
-	color: #CBDFD6;
-	border: 3px solid #CBDFD6;
-	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-}
 /*---------- End Homepage Section ----------*/
 
 /*---------- Start Portfolio Section ----------*/
@@ -1740,6 +1734,12 @@ nav ul li a:active {
 	#start-button:hover {
 		color: #3A6168;
 		border: 3px solid #3A6168;
+	}
+
+	#start-button:active {
+		color: #CBDFD6;
+		border: 3px solid #CBDFD6;
+		-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 	}
 
 	.about-button:hover {
