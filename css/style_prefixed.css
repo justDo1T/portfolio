@@ -64,12 +64,6 @@ p {
 	border: 2px solid #337579;
 }
 
-#top-bar-wrapper.scrolled nav a:active {
-	color: #000;
-	border: 2px solid #337579;
-	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-}
-
 #top-bar-wrapper.scrolled #logo:focus {
 	outline: 2px solid #337579;
 	outline-offset: 10px;
@@ -176,13 +170,6 @@ nav ul li a:focus {
 	color: #CBDFD6;
 	border: 1px solid #CBDFD6;
 	border-radius: 10px;
-}
-
-nav ul li a:active {
-	color: #CBDFD6;
-	border: 1px solid #CBDFD6;
-	border-radius: 10px;
-	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
 
 #header-wrapper #container {
@@ -1122,14 +1109,6 @@ nav ul li a:active {
 	-webkit-transform: scale(1.15);
 	        transform: scale(1.15);
 }
-
-.social-icons:active {
-	background-color: #E1E7E9;
-	color: #244C31;
-	-webkit-transform: scale(1.15);
-	        transform: scale(1.15);
-	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-}
 /*---------- End Team Section ----------*/
 
 /*---------- Start Contact Section ----------*/
@@ -1407,13 +1386,6 @@ nav ul li a:active {
 	color: #CDCDCD;
 }
 
-.contact-details a:active {
-	text-decoration: underline;
-	color: #CDCDCD;
-	font-weight: 700;
-	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-}
-
 .contact-details i {
 	margin: 10px 18px;
 	font-size: 2.2rem;
@@ -1472,13 +1444,6 @@ nav ul li a:active {
 	        transform: scale(1.1);
 }
 
-#social-contacts ul li a:active {
-	background-color: #ED8104;
-	-webkit-transform: scale(1.1);
-	        transform: scale(1.1);
-	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-}
-
 #social-contacts ul li a i {
 	font-size: 2.8rem;
 	line-height: 50px;
@@ -1509,12 +1474,6 @@ nav ul li a:active {
 	outline: none;
 	color: #FCB605;
 	text-decoration: underline;
-}
-
-#copyright a:active {
-	color: #FCB605;
-	text-decoration: underline;
-	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
 
 #footer-space {
@@ -2039,10 +1998,23 @@ nav ul li a:active {
 		border: 2px solid transparent;
 	}
 
+	#top-bar-wrapper.scrolled nav a:active {
+		color: #000;
+		border: 2px solid #337579;
+		-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+	}
+
 	nav ul li a:hover {
 		color: #000;
 		border: 1px solid transparent;
 		border-radius: 0;
+	}
+
+	nav ul li a:active {
+		color: #CBDFD6;
+		border: 1px solid #CBDFD6;
+		border-radius: 10px;
+		-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 	}
 
 	#start-button:hover {
@@ -2081,11 +2053,27 @@ nav ul li a:active {
 		        transform: scale(1);
 	}
 
+	.social-icons:active {
+		background-color: #E1E7E9;
+		color: #244C31;
+		-webkit-transform: scale(1.15);
+		        transform: scale(1.15);
+		-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+	}
+
 	#msg-button:hover {
 		color: #FFF;
 		background-color: rgba(237, 129, 4, 0.8);
 		-webkit-box-shadow: none;
 		        box-shadow: none;
+	}
+
+	#msg-button:active {
+		color: #ED8104;
+		background-color: rgba(252, 153, 5, 0.8);
+		-webkit-box-shadow: 0px 0px 7px 3px rgba(237, 129, 4, 0.9);
+		        box-shadow: 0px 0px 7px 3px rgba(237, 129, 4, 0.9);
+		-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 	}
 
 	#map-button:hover {
@@ -2095,9 +2083,24 @@ nav ul li a:active {
 		        box-shadow: none;
 	}
 
+	#map-button:active {
+		color: #ED8104;
+		background-color: rgba(252, 153, 5, 0.8);
+		-webkit-box-shadow: 0px 0px 7px 3px rgba(237, 129, 4, 0.9);
+		        box-shadow: 0px 0px 7px 3px rgba(237, 129, 4, 0.9);
+		color: #ED8104;
+	}
+
 	.contact-details a:hover {
 		text-decoration: none;
 		color: #EFEFEF;
+	}
+
+	.contact-details a:active {
+		text-decoration: underline;
+		color: #CDCDCD;
+		font-weight: 700;
+		-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 	}
 
 	#social-contacts ul li a:hover {
@@ -2106,8 +2109,21 @@ nav ul li a:active {
 		        transform: scale(1);
 	}
 
+	#social-contacts ul li a:active {
+		background-color: #ED8104;
+		-webkit-transform: scale(1.1);
+		        transform: scale(1.1);
+		-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+	}
+
 	#copyright a:hover {
 		color: #ED8104;
 		text-decoration: none;
+	}
+
+	#copyright a:active {
+		color: #FCB605;
+		text-decoration: underline;
+		-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 	}
 }
