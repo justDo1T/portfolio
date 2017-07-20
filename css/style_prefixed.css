@@ -64,6 +64,12 @@ p {
 	border: 2px solid #337579;
 }
 
+#top-bar-wrapper.scrolled nav a:active {
+	color: #000;
+	border: 2px solid #337579;
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
 #top-bar-wrapper.scrolled #logo:focus {
 	outline: 2px solid #337579;
 	outline-offset: 10px;
@@ -88,6 +94,10 @@ p {
 	outline-offset: 10px;
 }
 
+#logo:active {
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
 /*--- Start Menu Icon With Animation --*/
 #menu-icon {
     display: none;
@@ -98,6 +108,10 @@ p {
 
 #menu-icon:focus { 
 	outline: 2px solid #CBDFD6;
+}
+
+#menu-icon:active {
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
 
 #bar1, #bar2, #bar3 {
@@ -164,6 +178,13 @@ nav ul li a:focus {
 	border-radius: 10px;
 }
 
+nav ul li a:active {
+	color: #CBDFD6;
+	border: 1px solid #CBDFD6;
+	border-radius: 10px;
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
 #header-wrapper #container {
 	display: table;
 	width: 100%;
@@ -208,14 +229,20 @@ nav ul li a:focus {
 
 #start-button:hover {
 	color: #CBDFD6;
-	border: 2px solid #CBDFD6;
+	border: 3px solid #CBDFD6;
 }
 
 #start-button:focus {
 	outline: none;
 	color: #CBDFD6;
-	border: 2px solid #CBDFD6;
+	border: 3px solid #CBDFD6;
 	background-color: rgba(203, 223, 214, 0.15);
+}
+
+#start-button:active {
+	color: #CBDFD6;
+	border: 3px solid #CBDFD6;
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
 /*---------- End Homepage Section ----------*/
 
@@ -278,6 +305,7 @@ nav ul li a:focus {
 	    -ms-flex-align: center;
 	        align-items: center;
 	margin-bottom: 40px;
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
 
 /* flip the photo when clicked */
@@ -1027,12 +1055,10 @@ nav ul li a:focus {
 	outline: none;
 	-webkit-transition: all ease .3s;
 	transition: all ease .3s;
-	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
 
 .about-button:hover {
-	/*background-color: #E1E7E9; */
-	background-color: red;
+	background-color: #E1E7E9;
 	color: #244C31;
 	border: 1px solid transparent;
 	-webkit-transform: scale(1.1);
@@ -1040,13 +1066,22 @@ nav ul li a:focus {
 	cursor: pointer;
 }
 
-.about-button:active {
+.about-button:focus {
 	outline: none;
 	background-color: #E1E7E9;
 	color: #244C31;
 	border: 1px solid transparent;
 	-webkit-transform: scale(1.1);
 	        transform: scale(1.1);
+}
+
+.about-button:active {
+	background-color: #E1E7E9;
+	color: #244C31;
+	border: 1px solid transparent;
+	-webkit-transform: scale(1.1);
+	        transform: scale(1.1);
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
 
 .about-member {
@@ -1101,6 +1136,14 @@ nav ul li a:focus {
 	color: #244C31;
 	-webkit-transform: scale(1.15);
 	        transform: scale(1.15);
+}
+
+.social-icons:active {
+	background-color: #E1E7E9;
+	color: #244C31;
+	-webkit-transform: scale(1.15);
+	        transform: scale(1.15);
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
 /*---------- End Team Section ----------*/
 
@@ -1265,9 +1308,11 @@ nav ul li a:focus {
 }
 
 #msg-button:active {
+	color: #ED8104;
 	background-color: rgba(252, 153, 5, 0.8);
 	-webkit-box-shadow: 0px 0px 7px 3px rgba(237, 129, 4, 0.9);
 	        box-shadow: 0px 0px 7px 3px rgba(237, 129, 4, 0.9);
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
 
 #map-button {
@@ -1307,9 +1352,11 @@ nav ul li a:focus {
 }
 
 #map-button:active {
+	color: #ED8104;
 	background-color: rgba(252, 153, 5, 0.8);
 	-webkit-box-shadow: 0px 0px 7px 3px rgba(237, 129, 4, 0.9);
 	        box-shadow: 0px 0px 7px 3px rgba(237, 129, 4, 0.9);
+	color: #ED8104;
 }
 
 .mapScrollOff {
@@ -1375,6 +1422,13 @@ nav ul li a:focus {
 	color: #CDCDCD;
 }
 
+.contact-details a:active {
+	text-decoration: underline;
+	color: #CDCDCD;
+	font-weight: 700;
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
 .contact-details i {
 	margin: 10px 18px;
 	font-size: 2.2rem;
@@ -1433,6 +1487,13 @@ nav ul li a:focus {
 	        transform: scale(1.1);
 }
 
+#social-contacts ul li a:active {
+	background-color: #ED8104;
+	-webkit-transform: scale(1.1);
+	        transform: scale(1.1);
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
 #social-contacts ul li a i {
 	font-size: 2.8rem;
 	line-height: 50px;
@@ -1465,12 +1526,18 @@ nav ul li a:focus {
 	text-decoration: underline;
 }
 
+#copyright a:active {
+	color: #FCB605;
+	text-decoration: underline;
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
 #footer-space {
 	display:inline-block;
 	width: 60px;
 }
-
 /*---------- End Footer Section ----------*/
+
 
 
 /*-------------Media Queries ---------------*/
@@ -1495,18 +1562,15 @@ nav ul li a:focus {
 
 @media screen and (max-width: 1100px) {
 
-	/*--- Start Homepage Section ---*/
 	nav ul li {
 		padding-left: 15px;
 		padding-right: 15px;
 	}
-	/*--- End Homepage Section ---*/
 
-	/*--- Start Portfolio Section ---*/
 	.flip-container {
 		width: 50%;
 	}
-	/*--- End Portfolio Section ---*/
+
 	.one-third-offer {
 		width: calc(50% - 20px);
 	}
@@ -1544,7 +1608,6 @@ nav ul li a:focus {
 /*--- Hamburger Starts --*/
 @media screen and (max-width: 950px) {
 
-	/*--- Start Homepage Section ---*/
 	#menu-icon {
 		display: inline-block;
 	}
@@ -1569,10 +1632,10 @@ nav ul li a:focus {
 		display: flex;
 		-webkit-box-pack: center;
 		    -ms-flex-pack: center;
-		        justify-content: center; /* align horizontal */
+		        justify-content: center;
 		-webkit-box-align: center;
 		    -ms-flex-align: center;
-		        align-items: center; /* align vertical */
+		        align-items: center;
 		-webkit-box-sizing: border-box;
 		        box-sizing: border-box;
 		width: 100%;
@@ -1615,7 +1678,6 @@ nav ul li a:focus {
 		outline: 2px solid #337579;
 	}
 
-	/*--- End Homepage Section ---*/
 	.portfolio-line-break {
 		display: none;
 	}
@@ -1656,16 +1718,13 @@ nav ul li a:focus {
 
 @media screen and (max-width: 850px) {
 
-	/*--- Start Homepage Section ---*/
 	#heading-text h1 {
 		font-size: 8rem;
 	}
-	/*--- End Homepage Section ---*/
 
 	#technology-main ul li {
 		width: 33.333%;
 	}
-
 }
 
 @media screen and (max-width: 750px) {
@@ -1709,7 +1768,6 @@ nav ul li a:focus {
 
 @media screen and (max-width: 650px) {
 
-	/*--- Start Homepage Section ---*/
 	#heading-text h1 {
 		font-size: 6.7rem;
 	}
@@ -1718,22 +1776,14 @@ nav ul li a:focus {
 		font-size: 2rem;
 		padding: 9px 18px;
 	}
-	/*--- End Homepage Section ---*/
 
 	#technology-main ul li {
 		width: 50%;
 	}
 }
 
-@media screen and (max-width: 600px) {
-
-
-
-}
-
 @media screen and (max-width: 550px) {
 
-	/*--- Start Homepage Section ---*/
 	#heading-text h1 {
 		font-size: 5.5rem;
 	}
@@ -1743,7 +1793,6 @@ nav ul li a:focus {
 		font-weight: 600;
 		padding: 9px 16px;
 	}
-	/*--- End Homepage Section ---*/
 
 	#portfolio-header p, #technology-header p, #team-header p, #contact-header p {
 		font-size: 1.8rem;
@@ -1769,7 +1818,6 @@ nav ul li a:focus {
 	.contact-details p {
 		font-size: 1.5rem;
 	}
-
 }
 
 @media screen and (max-width: 500px) {
@@ -1846,7 +1894,6 @@ nav ul li a:focus {
 
 @media screen and (max-width: 450px) {
 
-	/*--- Start Homepage Section ----------*/
 	#heading-text h1 {
 		font-size: 4.5rem;
 	}
@@ -1855,7 +1902,6 @@ nav ul li a:focus {
 		font-size: 2rem;
 		padding: 12px 20px
 	}
-	/*--- End Homepage Section ---*/
 
 	#technology-main ul li {
 		width: 100%;
@@ -1944,13 +1990,10 @@ nav ul li a:focus {
 	#footer-space {
 		width: 20px;
 	}
-
 }
-
 
 @media screen and (max-width: 370px) {
 
-	/*--- Start Homepage Section ---*/
 	#heading-text h1 {
 		font-size: 3.8rem;
 	}
@@ -1958,7 +2001,6 @@ nav ul li a:focus {
 	#start-button {
 		font-size: 1.6rem;
 	}
-	/*--- End Homepage Section ---*/ 
 
 	.back h3 {
 		font-size: 1.8rem;
@@ -2005,3 +2047,15 @@ nav ul li a:focus {
 	}
 }
 
+@media (hover:none) {
+
+	#top-bar-wrapper.scrolled nav a:hover {
+		color: #3A6168;
+		border: 2px solid transparent;
+	}
+
+	.about-button:hover {
+
+	}
+
+}
