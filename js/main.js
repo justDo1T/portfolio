@@ -17,9 +17,9 @@ $(document).ready(function() {
     // Transforming hamburger menu-icon to closing X-icon
     $('#menu-icon').on('mousedown', function(e) {
         $(this).toggleClass('change');
-        $('body').addClass('stop-scrolling');
     	$('#main-nav').toggleClass('showHide');
         $('#top-bar-wrapper').toggleClass('topbar-hamburger-on');
+        $('body').toggleClass('stop-scrolling');
         $('#main-nav>li').removeClass('animated bounceInRight');
         $('#link-portfolio, #link-technology, #link-contact').addClass('animated bounceInLeft');
         $('#link-offer, #link-team').addClass('animated bounceInRight');
@@ -125,6 +125,7 @@ $(document).ready(function() {
         $('#menu-icon').removeClass('change');
         $('#main-nav').removeClass('showHide');
         $('#top-bar-wrapper').removeClass('topbar-hamburger-on');
+        $('body').removeClass('stop-scrolling');
         $('#start-button, .about-button, #map-button, #msg-button, .stop-focus, input, textarea, .social-icons').attr('tabIndex', '0');
     }
 

@@ -219,6 +219,11 @@ nav ul li a:focus {
 	border: 3px solid #CBDFD6;
 	background-color: rgba(203, 223, 214, 0.15);
 }
+
+.stop-scrolling {
+	height: 100%;
+	overflow: hidden;
+}
 /*---------- End Homepage Section ----------*/
 
 /*---------- Start Portfolio Section ----------*/
@@ -1259,11 +1264,6 @@ nav ul li a:focus {
 
 	#top-bar-wrapper {
 		z-index: 1;
-	}
-
-	.stop-scrolling {
-	  height: 100%;
-	  overflow: hidden;
 	}
 
 	nav ul {
