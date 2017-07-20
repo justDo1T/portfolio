@@ -81,6 +81,8 @@ p {
 	width: 120px;
 	height: 40px;
 	float: left;
+	-webkit-animation-delay: .6s;
+	        animation-delay: .6s;
 }
 
 #logo:focus {
@@ -98,6 +100,8 @@ p {
     cursor: pointer;
     padding: 7px;
     margin: 14px 15px 10px 0;
+    -webkit-animation-delay: .6s;
+            animation-delay: .6s;
 }
 
 #menu-icon:focus { 
@@ -133,8 +137,6 @@ p {
 /*--- End Menu Icon With Animation --*/
 
 nav {
-	-webkit-animation-delay: .4s;
-	        animation-delay: .4s;
 	float: right;
 }
 
@@ -146,6 +148,8 @@ nav ul li {
 	display: inline-block;
 	padding: 25px;
 	padding-top: 28px;
+	-webkit-animation-delay: .6s;
+	        animation-delay: .6s;
 }
 
 nav ul li a {
@@ -195,9 +199,14 @@ nav ul li a:focus {
 	font-weight: 300;
 }
 
-.btn {
+.head-txt {
 	-webkit-animation-delay: .4s;
 	        animation-delay: .4s;
+}
+
+.btn {
+	-webkit-animation-delay: .8s;
+	        animation-delay: .8s;
 	padding-top: 40px;
 }
 
