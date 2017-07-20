@@ -1739,8 +1739,55 @@ nav ul li a:active {
 		border: 2px solid transparent;
 	}
 
-	.about-button:hover {
-
+	nav ul li a:hover {
+		color: #000;
+		border: 1px solid transparent;
+		border-radius: 0;
 	}
 
+	#start-button:hover {
+		color: #3A6168;
+		border: 3px solid #3A6168;
+	}
+
+	.about-button:hover {
+		background-color: transparent;
+		color: #EFEFEF;
+		border: 1px solid #EFEFEF;
+		transform: scale(1);
+		cursor: auto;
+	}
+
+	.social-icons:hover {
+		background-color: transparent;
+		color: #EFEFEF;
+		transform: scale(1);
+	}
+
+	#msg-button:hover {
+		color: #FFF;
+		background-color: rgba(237, 129, 4, 0.8);
+		box-shadow: none;
+	}
+
+	#map-button:hover {
+		color: #FFF;
+		background-color: rgba(237, 129, 4, 0.8);
+		box-shadow: none;
+	}
+
+	.contact-details a:hover {
+		text-decoration: none;
+		color: #EFEFEF;
+	}
+
+	#social-contacts ul li a:hover {
+		background-color: #E1E7E9;
+		transform: scale(1);
+	}
+
+	#copyright a:hover {
+		color: #ED8104;
+		text-decoration: none;
+	}
 }
