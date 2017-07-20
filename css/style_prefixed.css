@@ -225,6 +225,11 @@ nav ul li a:focus {
 	border: 3px solid #CBDFD6;
 	background-color: rgba(203, 223, 214, 0.15);
 }
+
+.stop-scrolling {
+	height: 100%;
+	overflow: hidden;
+}
 /*---------- End Homepage Section ----------*/
 
 /*---------- Start Portfolio Section ----------*/
@@ -1569,6 +1574,7 @@ nav ul li a:focus {
 		right: 0;
 		padding-top: 79px;
 		background-color: rgba(203, 223, 214, 0.96);
+		z-index: -1;
 	}
 
 	nav ul li {
@@ -1992,6 +1998,12 @@ nav ul li a:focus {
 	}
 }
 
+/* This applies to touch devices. It removes sticky hover issue when button is touched on touch devices. 
+   Also added 'active' state to indicate the button/link was touched.
+   This solution works on Chrome, Safari, Opera and Edge, but is not compatible with Firefox and IE (http://caniuse.com/#feat=css-media-interaction).
+   This solution also blocks 'hover' state on hybrid devices (touch & mouse) and disable 'hover' even when user is using mouse at the moment.
+   More on sticky hover solutions: http://www.javascriptkit.com/dhtmltutors/sticky-hover-issue-solutions.shtml
+*/
 @media (hover:none) {
 
 	#top-bar-wrapper.scrolled nav a:hover {

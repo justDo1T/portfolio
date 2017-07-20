@@ -43,7 +43,8 @@ $(document).ready(function() {
 
     // Slide show/hide team-member details
     var prevBtn;
-    $('.about-button').on('mousedown', function(e) {
+    $('.about-button').on('click', function(e) {
+        this.blur();
         var $parent = $(this).parent();
         var btn = this.id;
         if (btn != prevBtn && $(window).width() < 950) {
@@ -53,8 +54,6 @@ $(document).ready(function() {
         $parent.find('.space').css('height', $parent.find('.about-member-info').height()+'px');
         customSlideToggle($parent.find('.about-member-info'));
         $parent.find('.space').slideToggle(600);
-        this.blur();
-        e.preventDefault();
     });
 
     // Adjust space under team-member when resizing the window
@@ -137,9 +136,9 @@ $(document).ready(function() {
             e.slideDown(600, function() {
                 // Sets window to properly see sliding text
                 if ($(window).width() < 550) {
-                    $(window).scrollTo(e.parent().parent().children('h4'), 600);
+                    $(window).scrollTo(e.parent().parent().children('h4'), 300);
                 } else if ($(window).width() < 950)  {
-                    $(window).scrollTo(e.parent().parent().children('img'), 600);
+                    $(window).scrollTo(e.parent().parent().children('img'), 300);
                 }
             });
         } else {

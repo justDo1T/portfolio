@@ -4,8 +4,8 @@
   "description": "Portfolio website",
   "main": "index.js",
   "scripts": {
-    "autoprefixer": "postcss style.css --use autoprefixer --no-map -o css/style_prefixed.css",
-    "autoprefixer_watch": "postcss style.css --use autoprefixer --no-map --watch -o css/style_prefixed.css"
+    "autoprefixer": "postcss css/style.css --use autoprefixer --no-map -o css/style_prefixed.css",
+    "autoprefixer_watch": "postcss css/style.css --use autoprefixer --no-map --watch -o css/style_prefixed.css"
   },
   "repository": {
     "type": "git",
