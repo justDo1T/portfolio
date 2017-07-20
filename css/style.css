@@ -1261,6 +1261,11 @@ nav ul li a:focus {
 		z-index: 1;
 	}
 
+	.stop-scrolling {
+	  height: 100%;
+	  overflow: hidden;
+	}
+
 	nav ul {
 		display: none;
 		position: fixed;

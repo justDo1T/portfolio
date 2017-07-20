@@ -17,7 +17,7 @@ $(document).ready(function() {
     // Transforming hamburger menu-icon to closing X-icon
     $('#menu-icon').on('mousedown', function(e) {
         $(this).toggleClass('change');
-        $('body').bind('touchmove', function(e){e.preventDefault()});
+        $('body').addClass('stop-scrolling');
     	$('#main-nav').toggleClass('showHide');
         $('#top-bar-wrapper').toggleClass('topbar-hamburger-on');
         $('#main-nav>li').removeClass('animated bounceInRight');
