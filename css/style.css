@@ -1268,7 +1268,7 @@ nav ul li a:focus {
 		bottom: 0;
 		left: 0;
 		right: 0;
-		margin-top: 79px;
+		padding-top: 79px;
 		background-color: rgba(203, 223, 214, 0.96);
 	}
 
