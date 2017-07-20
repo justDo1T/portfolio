@@ -80,7 +80,8 @@ p {
 	width: 120px;
 	height: 40px;
 	float: left;
-	animation-delay: .6s;
+	visibility: hidden;
+	animation-delay: .4s;
 }
 
 #logo:focus {
@@ -98,7 +99,8 @@ p {
     cursor: pointer;
     padding: 7px;
     margin: 14px 15px 10px 0;
-    animation-delay: .6s;
+    visibility: hidden;
+    animation-delay: .4s;
 }
 
 #menu-icon:focus { 
@@ -144,7 +146,8 @@ nav ul li {
 	display: inline-block;
 	padding: 25px;
 	padding-top: 28px;
-	animation-delay: .6s;
+	visibility: hidden;
+	animation-delay: .4s;
 }
 
 nav ul li a {
@@ -193,12 +196,13 @@ nav ul li a:focus {
 	font-weight: 300;
 }
 
-.head-txt {
-	animation-delay: .4s;
+#head-txt {
+	visibility: hidden;
 }
 
-.btn {
-	animation-delay: .8s;
+#btn {
+	visibility: hidden;
+	animation-delay: .4s;
 	padding-top: 40px;
 }
 

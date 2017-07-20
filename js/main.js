@@ -1,5 +1,10 @@
 $(document).ready(function() {
 
+    // Add bounceIn animation to home page items on start
+    $('#logo').addClass('animated bounceInLeft').css('visibility', 'visible');
+    $('#menu-icon, #main-nav>li').addClass('animated bounceInRight').css('visibility', 'visible');
+    $('#head-txt, #btn').addClass('animated bounceInUp').css('visibility', 'visible');
+
     // Changing background of top navigation bar when page is scrolled
 	$(document).on('scroll', function() {
 	   var topNav = $('#top-bar-wrapper');
