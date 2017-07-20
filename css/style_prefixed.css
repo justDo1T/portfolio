@@ -1563,10 +1563,11 @@ nav ul li a:focus {
 	nav ul {
 		display: none;
 		position: fixed;
-		top: 79px;
+		top: 0;
 		bottom: 0;
 		left: 0;
 		right: 0;
+		padding-top: 79px;
 		background-color: rgba(203, 223, 214, 0.96);
 	}
 
