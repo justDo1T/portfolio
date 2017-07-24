@@ -11,7 +11,7 @@ $(document).ready(function() {
 
     // Changing background of top navigation bar when page is scrolled
 	$(document).on('scroll', function() {
-	   const topNav = $('#top-bar-wrapper');
+	   var topNav = $('#top-bar-wrapper');
        topNav.toggleClass('scrolled', $(this).scrollTop() > topNav.height());
     });
     if ($(window).scrollTop() > 100) {
@@ -51,11 +51,11 @@ $(document).ready(function() {
     });
 
     // Slide show/hide team-member details
-    let prevBtn;
+    var prevBtn;
     $('.about-button').on('click', function(e) {
         this.blur();
-        let $parent = $(this).parent();
-        let btn = this.id;
+        var $parent = $(this).parent();
+        var btn = this.id;
         if (btn != prevBtn && $(window).width() < 950) {
              reset($parent.parent());
         }
