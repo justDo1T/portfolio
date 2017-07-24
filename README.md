@@ -1,6 +1,6 @@
 # Portfolio
 
-This is the project website made by [Adrian Siewiera](https://www.linkedin.com/in/adrian-siewiera/). Website is fully responsive and adjusted to all main browsers.
+This is the project website made by [Adrian Siewiera](https://www.linkedin.com/in/adrian-siewiera/). Website is fully responsive and adjusted to all modern browsers.
 
 Topic: Portfolio website of polish programmers, who are creating advanced and complex **web/mobile applications** for startups and enterprises.
 
