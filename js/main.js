@@ -1,3 +1,7 @@
+(function portfolioModule() {   // start local scope - portfolio
+
+'use strict';
+
 $(document).ready(function() {
 
     // Add bounceIn animation to home page items on start
@@ -8,7 +12,7 @@ $(document).ready(function() {
     // Changing background of top navigation bar when page is scrolled
 	$(document).on('scroll', function() {
 	   var topNav = $('#top-bar-wrapper');
-        topNav.toggleClass('scrolled', $(this).scrollTop() > topNav.height());
+       topNav.toggleClass('scrolled', $(this).scrollTop() > topNav.height());
     });
     if ($(window).scrollTop() > 100) {
         $('#top-bar-wrapper').addClass('scrolled');
@@ -142,7 +146,7 @@ $(document).ready(function() {
                 // Sets window to properly see sliding text
                 if ($(window).width() < 550) {
                     $(window).scrollTo(e.parent().parent().children('h4'), 300);
-                } else if ($(window).width() < 950)  {
+                } else if ($(window).width() < 950) {
                     $(window).scrollTo(e.parent().parent().children('img'), 300);
                 }
             });
@@ -169,3 +173,5 @@ $(document).ready(function() {
         });
     }
 });
+
+})();   // end local scope - portfolio
