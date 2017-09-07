@@ -146,7 +146,7 @@ $(document).ready(function() {
                 // Sets window to properly see sliding text
                 if ($(window).width() < 550) {
                     $(window).scrollTo(e.parent().parent().children('h4'), 300);
-                } else if ($(window).width() < 950)  {
+                } else if ($(window).width() < 950) {
                     $(window).scrollTo(e.parent().parent().children('img'), 300);
                 }
             });
